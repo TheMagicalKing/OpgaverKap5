@@ -15,11 +15,12 @@ public class OpgaveFem_Et {
                 int examScore = input.nextInt();
                 if (examScore >= 60)
                     System.out.println("You have passed the exam!");
-                else if (examScore < 60 && examScore > 0)
+                else if (examScore < 60 && examScore >= 0)
                     System.out.println("You have failed the exam!");
-                else if (examScore == -1)
+                else if (examScore == -1) {
                     System.out.println("Exiting program");
                     return i = false;
+                }
 
             }
             return i = false;
